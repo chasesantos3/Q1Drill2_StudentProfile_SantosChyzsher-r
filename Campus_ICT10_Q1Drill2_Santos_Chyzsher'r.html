@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+<link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+<style>
+body { 
+    background-color: #ffe6f2; 
+    font-family: "Comic Sans MS", cursive; 
+    text-align: center; 
+    padding: 20px; 
+}
+#output { 
+    margin-top: 20px; 
+    white-space: pre-line; 
+    color: #ff3399; 
+    border: 2px dashed pink; 
+    padding: 15px; 
+    border-radius: 15px; 
+    background-color: #fff0f5; 
+    font-weight: bold;
+}
+button {
+    background-color: #ff80bf; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<h1>𖦹 ⋆ String Showcase: My Basic Info ⋆ 𖦹</h1>
+<br>
+
+<label>Name:</label><br>
+<input type="text" id="name" placeholder="What's your name?"><br><br>
+
+<label>Age:</label><br>
+<input type="number" id="age" placeholder="How old are you?"><br><br>
+
+<label>School:</label><br>
+<input type="text" id="school" placeholder="What's your school?"><br><br>
+
+<button py-click="generate_message()">Generate Profile</button>
+
+<div id="output"></div>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
